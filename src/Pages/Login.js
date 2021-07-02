@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button,Grid,Avatar,Typography,TextField,makeStyles} from '@material-ui/core';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import {FaGoogle,FaGithub,FaMailBulk} from "react-icons/fa";
+import {FaGoogle,FaMailBulk} from "react-icons/fa";
 import { useAuth } from '../contexts/AuthContext';
 import {Link,useHistory} from 'react-router-dom';
 import { Alert, AlertTitle } from '@material-ui/lab';
@@ -88,8 +88,6 @@ function Login(){
                    </form>
                    <Typography variant="h6">-or-</Typography>
                    <Button disabled={loading} type="submit" style={{marginTop:"15px",padding:"10px"}} color="primary" fullWidth variant="contained" onClick={handleGoogleLogin}>Login with <FaGoogle style={{marginLeft:"10px"}}/></Button>
-                   <Typography variant="h6">-or-</Typography>
-                   <Button disabled={loading} type="submit" style={{marginTop:"15px",padding:"10px"}} color="primary" fullWidth variant="contained">Login with <FaGithub style={{marginLeft:"10px"}}/></Button>
                    <div style={{marginTop:"16px"}}>Need an account? <Link to="/signup">SignUp</Link></div>
            </div>
           </Grid> 

@@ -22,7 +22,7 @@ function Dashboard(){
         setList(lists)
        
       })
-    },[])
+    },[currentUser.email])
     console.log(list)
     return(
       <AddItemProvider>

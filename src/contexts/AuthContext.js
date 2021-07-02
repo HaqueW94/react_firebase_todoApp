@@ -28,9 +28,7 @@ export function AuthProvider({children}){
         return auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
     }
 
-    function loginGithub(){
-        return auth.signInWithPopup(new firebase.auth.GithubAuthProvider());
-    }
+   
 
    
 
