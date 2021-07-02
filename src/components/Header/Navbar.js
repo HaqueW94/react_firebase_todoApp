@@ -32,6 +32,12 @@ const useStyle=makeStyles((theme)=>({
             backgroundPosition:"center",
             backgroundSize:"cover",
             backgroundRepeat:"no-repeat"
+        },
+        [theme.breakpoints.down('sm')]:{
+            paper:{
+                height:"30vh",
+                marginTop:theme.spacing(7),
+            }
         }
 }))
 function Navbar(props){

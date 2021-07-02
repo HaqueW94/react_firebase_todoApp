@@ -31,7 +31,12 @@ const useStyle=makeStyles((theme)=>({
      },
      closeIcon:{
          width:theme.spacing(2)
-     }
+     },
+     [theme.breakpoints.down('sm')]:{
+        paper2:{
+            width:"70%"
+        }
+    }
 
 }))
 
